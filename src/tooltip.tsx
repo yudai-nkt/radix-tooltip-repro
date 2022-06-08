@@ -1,4 +1,4 @@
-import * as RadixTooltip from "@radix-ui/react-tooltip";
+import * as RadixPopper from "@radix-ui/react-popper";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
@@ -7,10 +7,10 @@ tooltip.id = "tooltip";
 document.body.append(tooltip);
 
 const App = () => (
-  <RadixTooltip.Root open>
-    <RadixTooltip.Trigger>Trigger</RadixTooltip.Trigger>
-    <RadixTooltip.Content>Content</RadixTooltip.Content>
-  </RadixTooltip.Root>
+  <RadixPopper.Root>
+    <RadixPopper.Anchor>anchor</RadixPopper.Anchor>
+    <RadixPopper.Content>content</RadixPopper.Content>
+  </RadixPopper.Root>
 );
 
 createRoot(tooltip).render(
