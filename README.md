@@ -13,7 +13,7 @@ npm ci
 npm run build
 ```
 
-2. Install the extension
+2. Install the extension (this is explained [here](https://developer.chrome.com/docs/extensions/mv3/getstarted/#unpacked) as well)
     - Go to chrome://extensions and eable developer mode in the top-right corner.
     - Click the "Load Unpacked" in the top-left and select the `dist` directory we built in the previous step.
 
